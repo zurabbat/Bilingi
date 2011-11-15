@@ -1,0 +1,9 @@
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\bin\Debug\MzgvevelzeGamomrtmevi.dll
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\bin\Debug\MzgvevelzeGamomrtmevi.pdb
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\obj\Debug\MzgvevelzeGamomrtmevi.dll
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\obj\Debug\MzgvevelzeGamomrtmevi.pdb
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\bin\Debug\nunit.framework.dll
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\bin\Debug\nunit.mocks.dll
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\bin\Debug\pnunit.framework.dll
+C:\Projects\Bilingi\MzgvevelzeGamomrtmevi\bin\Debug\nunit.framework.xml
