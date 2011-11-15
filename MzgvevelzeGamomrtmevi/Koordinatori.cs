@@ -22,7 +22,7 @@ namespace MzgvevelzeGamomrtmevi
                                         {
                                             ChabarebuliPaketi = new Paketi(),
                                             MigebisTarigi = DateTime.Now,
-                                            SheasrulesStatusi = "გადაცემულია შესასრულებლად "
+                                            SheasrulesStatusi = MzgvevelzeGamomrtmevi.ChabardasStatusi.PaketiMovidaMovidaGanmeorebit
                                         },
                                     new GaformdaKontrakti(){},
                                     new GauqmdaPolisi(){}
@@ -30,7 +30,6 @@ namespace MzgvevelzeGamomrtmevi
 
             daaregistrireShemsrulebebli.Sacdeli(movlenebi);
         }
-
     }
 
     public class Koordinatori
@@ -67,40 +66,18 @@ namespace MzgvevelzeGamomrtmevi
         public void Sheasrule(Chabarda movlena)
         {
             Console.WriteLine("ჩაბარდააა - " + movlena.GetType().FullName + " - " + movlena.SheasrulesStatusi);
-            //todo პირველი ვერსია, არ მომწონს, თუ მეორე არ დამტკიცდა კონტრაქტი, 
-            //todo პირველს, 0 თანხიანს ვკარგავ და ახლიდან გადაანგარიშება მჭირდება
-            foreach (var mzgveveli in movlena.ChabarebuliPaketi.MzgveveliKompaniebi)
-            {
-                var //movlena.ChabarebuliPaketi.
-                mamentGamosartmeviTanxa =
-                    new PaketisShemfasebeli().PaketisGirebulebisCalkulatori(movlena.ChabarebuliPaketi, movlena.Tarigi, mzgveveli);
-                if (mamentGamosartmeviTanxa == - 10) return;
 
-                //todo ესე იგი უკვე არსებობდა რომელიმე პაკეტში
-                if (mamentGamosartmeviTanxa == 0) return;
-
-                var axaliTranzaqcia = new TranzaqciebisSacavi.Tranzaqcia()
-                                          {
-                                              TranzaqciisID = Guid.NewGuid(),
-                                              MzgveveliKompania = mzgveveli,
-                                              Statusi = TranzaqciebisSacavi.TranzaqciisStatusi.GiaTranzaqcia,
-                                              PaketisNomeri = movlena.ChabarebuliPaketi.PaketisNomeri,
-                                              TranzaqciisTarigi = DateTime.Now,
-                                              Tanxa = mamentGamosartmeviTanxa,
-                                              Polisebi = movlena.ChabarebuliPaketi.Polisebi
-                                                            .Where(x => x.Mzgveveli == mzgveveli)
-                                                            .Select(x => x.Nomeri)
-                                                            .ToList(),
-                                              JgufisKodi = movlena.ChabarebuliPaketi.Damajgufebeli,
-                                          };
-                new TranzaqciebisSacavi().GaxseniTranzaqcia(axaliTranzaqcia);
-            }
+            // todo ვეძებ ყველა არაგაუქმებულ ტრანზაქციაში (თუ მეორედ მომივიდა შეცდომით)
+            if (new TranzaqciebisSacavi().MozebneAraGauqmebuliTranzaqcia(movlena.ChabarebuliPaketi) != null) return;            
+            
+            var shemfasebeli = new PaketisShemfasebeli();
 
             //todo მეორე ვერსია - ტრანზაქციას ვავსებ ინფორმაციით: პაკეტის ნომერს ვამატებ და თარიღს ვაწერ ნაკლებს,
             //todo თითქოს რამდენი მოვლენაც არ უნდა მქონდეს და რა თანმიმდევრობითაც არ უნდა მომივიდეს, თითქოს არ უნდა მქონდეს პრობლემა
+            
             foreach (var mzgveveli in movlena.ChabarebuliPaketi.MzgveveliKompaniebi)
             {
-                new PaketisShemfasebeli().GadaxedeTranzaqciebs(movlena,  mzgveveli);
+                shemfasebeli.GadaxedeTranzaqciebs(movlena, mzgveveli);
             }
 
         }
@@ -121,6 +98,43 @@ namespace MzgvevelzeGamomrtmevi
         {
             Console.WriteLine("გაუქმდა პოლისიიიი - " + movlena.GetType().FullName + " - " + movlena.Tarigi);
         }
+    }
+
+
+    public abstract class Movlena
+    {
+        public DateTime Tarigi { get; set; }
+        public DateTime MigebisTarigi { get; set; }
+    }
+
+    public class Chabarda : Movlena
+    {
+        public Paketi ChabarebuliPaketi { get; set; }
+        public ChabardasStatusi SheasrulesStatusi { get; set; } //todo ???? რამეში მჭირდება ვითომ?
+    }
+
+    public enum ChabardasStatusi
+    {
+        PaketiMovidaMovidaGanmeorebit,
+        GaixsnaAxaliTranzaqcia,
+        GauqmdaTranzaqcia,
+        DaemataTranzaqcias
+    }
+
+    public class GaformdaKontrakti : Movlena
+    {
+        public Polisi GaformebuliPoli { get; set; }
+    }
+
+    public class GauqmdaPolisi : Movlena
+    {
+        public Polisi GauqmebuiliPolisi { get; set; }
+    }
+
+    public class Polisi
+    {
+        public string Mzgveveli { get; set; }
+        public string Nomeri { get; set; }
     }
 
     public class Paketi
@@ -153,31 +167,4 @@ namespace MzgvevelzeGamomrtmevi
         public string Damajgufebeli { get; set; }
     }
 
-    public abstract class Movlena
-    {
-        public DateTime Tarigi { get; set; }
-        public DateTime MigebisTarigi { get; set; }
-    }
-
-    public class Chabarda : Movlena
-    {
-        public Paketi ChabarebuliPaketi { get; set; }
-        public string SheasrulesStatusi { get; set; } //todo ???? რამეში მჭირდება ვითომ?
-    }
-
-    public class GaformdaKontrakti : Movlena
-    {
-        public Polisi GaformebuliPoli { get; set; }
-    }
-
-    public class GauqmdaPolisi : Movlena
-    {
-        public Polisi GauqmebuiliPolisi { get; set; }
-    }
-
-    public class Polisi
-    {
-        public string Mzgveveli { get; set; }
-        public string Nomeri { get; set; }
-    }
 }

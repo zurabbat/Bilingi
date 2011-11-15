@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Koordinatori.cs" />
+    <Compile Include="Models\FasiTarigitBase.cs" />
     <Compile Include="Models\TranzaqciebisSacavi.cs" />
     <Compile Include="Models\PaketisShemfasebeli.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
