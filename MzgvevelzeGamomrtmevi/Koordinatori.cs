@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,18 +18,18 @@ namespace MzgvevelzeGamomrtmevi
                 .DaaregistrireShemsrulebebli(new GaformdaKontraktisShemsrulebeli())
                 .DaaregistrireShemsrulebebli(new GauqmdaPolisiShemsrulebeli());
 
-            var movlenebi = new List<Movlena>
-                                       {new Chabarda()
-                                        {
-                                            ChabarebuliPaketi = new Paketi(),
-                                            MigebisTarigi = DateTime.Now,
-                                            SheasrulesStatusi = MzgvevelzeGamomrtmevi.ChabardasStatusi.PaketiMovidaMovidaGanmeorebit
-                                        },
-                                    new GaformdaKontrakti(){},
-                                    new GauqmdaPolisi(){}
-                                };
+            //var movlenebi = new List<Movlena>
+            //                           {new Chabarda()
+            //                            {
+            //                                ChabarebuliPaketi = new Paketi(),
+            //                                MigebisTarigi = DateTime.Now,
+            //                                SheasrulesStatusi = MzgvevelzeGamomrtmevi.ChabardasStatusi.PaketiMovidaMovidaGanmeorebit
+            //                            },
+            //    new GaformdaKontrakti(){},
+            //    new GauqmdaPolisi(){}
+            //};
 
-            daaregistrireShemsrulebebli.Sacdeli(movlenebi);
+            // daaregistrireShemsrulebebli.Sacdeli(movlenebi);
         }
     }
 
@@ -65,21 +66,91 @@ namespace MzgvevelzeGamomrtmevi
     {
         public void Sheasrule(Chabarda movlena)
         {
-            Console.WriteLine("ჩაბარდააა - " + movlena.GetType().FullName + " - " + movlena.SheasrulesStatusi);
+            var chabardaStatusi = DaamushaveChabardaMovlena(movlena);
+            //todo შევინახო მოვლენა სტატუსიანად
+        }
 
-            // todo ვეძებ ყველა არაგაუქმებულ ტრანზაქციაში (თუ მეორედ მომივიდა შეცდომით)
-            if (new TranzaqciebisSacavi().MozebneAraGauqmebuliTranzaqcia(movlena.ChabarebuliPaketi) != null) return;            
-            
-            var shemfasebeli = new PaketisShemfasebeli();
+        private static ChabardasStatusi DaamushaveChabardaMovlena(Chabarda movlena)
+        {
+            var tranzaqciebi = new TranzaqciebisSacavi();
+            if (tranzaqciebi.MozebneShecdomitXomArMovidaChabarda(movlena.Paketi.PaketisNomeri))
+                return ChabardasStatusi.PaketiMovidaGanmeorebit;
 
-            //todo მეორე ვერსია - ტრანზაქციას ვავსებ ინფორმაციით: პაკეტის ნომერს ვამატებ და თარიღს ვაწერ ნაკლებს,
-            //todo თითქოს რამდენი მოვლენაც არ უნდა მქონდეს და რა თანმიმდევრობითაც არ უნდა მომივიდეს, თითქოს არ უნდა მქონდეს პრობლემა
-            
-            foreach (var mzgveveli in movlena.ChabarebuliPaketi.MzgveveliKompaniebi)
+            var axaliPilisebi = movlena.Paketi.Polisebi.Select(x => x.PolisiNomeri);
+
+            //todo მოვძებნო რომელიმე პოლისი სხვა ტრანზაქციაშიც ხომ არ მონაწილეობს
+            foreach (var polisi in movlena.Paketi.Polisebi)
             {
-                shemfasebeli.GadaxedeTranzaqciebs(movlena, mzgveveli);
+                var arsebuliTranzaqciebi = tranzaqciebi.MozebnePolisiSxvaTranzaqciashiXomAraa(polisi);
+                if (arsebuliTranzaqciebi == null)
+                {
+                    tranzaqciebi.GaxseniAxaliTranzaqcia(movlena);
+                    return ChabardasStatusi.GaixsnaAxaliTranzaqcia;
+                }
+                else
+                {
+                    //todo შევავსო არსებული ტრანზაქცია: 
+                    //todo პოლისს მივამატო პაკეტი; OK
+                    //todo პეკეტს მივამატო პოლისი; OK
+                    //todo შევაფასო პაკეტი და გავხსნა ახალი ტრანზაქცია ან შევავსო ინფორმაციით
+
+                    //todo ჯერ უნდა დავადგინო მოვლენის და ტრანზაქციის რიგითობა
+                    foreach (var tranzaqcia in arsebuliTranzaqciebi)
+                    { 
+                        var zveliPolisebi = tranzaqcia.Paketebi.Polisebi.Select(x => x.PolisisNomeri);
+                        if (movlena.Tarigi > tranzaqcia.Tarigi)
+                        {
+                            //todo რიგითობა სწორია
+                           
+                            var sia = zveliPolisebi.Except(axaliPilisebi).ToList(); 
+                            if (sia.Count() == 0)
+                            {
+                                tranzaqciebi.SheavseMonacemebi(tranzaqcia, polisi.PolisiNomeri,
+                                                               movlena.Paketi.PaketisNomeri, tranzaqcia.Tarigi);
+                            }
+                            else
+                            {
+                                //todo თუ რამეა განსხვავება
+                                tranzaqciebi.GaxseniAxaliTranzaqcia(movlena);
+                                foreach (var variable in sia)
+                                {
+                                    if (tranzaqcia.Paketebi.Polisebi.Select(x=>x.PolisisNomeri).Contains(variable))
+                                    {
+                                        tranzaqciebi.SheavseMonacemebi(tranzaqcia, polisi.PolisiNomeri, movlena.Paketi.PaketisNomeri, tranzaqcia.Tarigi);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            //todo რიგითობა არასწორია
+                            var sia = axaliPilisebi.Except(zveliPolisebi).ToList();
+                            if (sia.Count() == 0)
+                            {
+                                tranzaqciebi.SheavseMonacemebi(tranzaqcia, polisi.PolisiNomeri,
+                                                               movlena.Paketi.PaketisNomeri, movlena.Tarigi);
+                            }
+                            else
+                            {
+                                //todo თუ რამეა განსხვავება
+                                tranzaqciebi.GaxseniAxaliTranzaqcia(movlena);
+                                foreach (var variable in sia)
+                                {
+                                    if (tranzaqcia.Paketebi.Polisebi.Select(x => x.PolisisNomeri).Contains(variable))
+                                    {
+                                        tranzaqciebi.SheavseMonacemebi(tranzaqcia, polisi.PolisiNomeri, movlena.Paketi.PaketisNomeri, tranzaqcia.Tarigi);
+                                    }
+                                }
+                            }
+                            //todo me mgoni ar unda 
+                            //tranzaqciebi.SheavseMonacemebi(tranzaqcia, polisi.PolisiNomeri, movlena.Paketi.PaketisNomeri, movlena.Tarigi);
+                        }
+                        return ChabardasStatusi.GanaxldaTranzaqciisMonacemebi;
+                    }
+                }
             }
 
+            return ChabardasStatusi.GaixsnaAxaliTranzaqcia;
         }
     }
 
@@ -87,9 +158,47 @@ namespace MzgvevelzeGamomrtmevi
     {
         public void Sheasrule(GaformdaKontrakti movlena)
         {
-            var ss = movlena.GaformebuliPoli == null ? "არ აქვს პოლისის ნომერი" : movlena.GaformebuliPoli.Nomeri;
+            var tranzaqciebi = new TranzaqciebisSacavi();
+            string ss = "";
             Console.WriteLine("გაფორმდაააა - " + movlena.GetType().FullName + " - " + ss);
+
+            var chabardaStatusi = DaamushaveDamtkicdaMovlena(movlena); 
         }
+
+        private static DamtkicdaStatusi DaamushaveDamtkicdaMovlena(GaformdaKontrakti movlena)
+        {
+            //todo შეცდომით ხომ არ მოვიდა მეორედ
+            var tranzaqciebi = new TranzaqciebisSacavi();
+            if (tranzaqciebi.MozebneShecdomitXomArMovidaDamtkicda(movlena.PolisiNomeri))
+                return DamtkicdaStatusi.DamtkicdaMovidaShecdomit;
+
+            //todo მოვძებნო რომელ ჩავაბარეშია ეს პოლისი და დავხურო სავარაუდო გამოსართმევი ტრანზაქციები
+
+            var arsebuliTranzaqciebi = tranzaqciebi.MozebneChabarebulPaketebshiPolis(movlena.PolisiNomeri);
+            if (arsebuliTranzaqciebi == null)
+            {
+                //todo არ ყოფილა ჩავაბარე
+                return DamtkicdaStatusi.ArMoizebnaChabareba;
+            }
+            else
+            {
+                //todo დავიარო ტრანზაქციები და დავხურო ???
+                foreach (var tranzaqcia in arsebuliTranzaqciebi)
+                {
+                    
+                }
+
+            }
+            
+            //tranzaqciebi.DaaregistrireMzgvevelzeGamosartmeviTanxa(movlena);
+            return DamtkicdaStatusi.DamtkicdaMovidaShecdomit;
+        }
+    }
+
+    internal enum DamtkicdaStatusi
+    {
+        DamtkicdaMovidaShecdomit,
+        ArMoizebnaChabareba
     }
 
     public class GauqmdaPolisiShemsrulebeli : IShemsrulebeli<GauqmdaPolisi>
@@ -109,57 +218,37 @@ namespace MzgvevelzeGamomrtmevi
 
     public class Chabarda : Movlena
     {
-        public Paketi ChabarebuliPaketi { get; set; }
-        public ChabardasStatusi SheasrulesStatusi { get; set; } //todo ???? რამეში მჭირდება ვითომ?
+        public ChabardasPaketi Paketi;
     }
 
-    public enum ChabardasStatusi
+    public class ChabardasPaketi
     {
-        PaketiMovidaMovidaGanmeorebit,
-        GaixsnaAxaliTranzaqcia,
-        GauqmdaTranzaqcia,
-        DaemataTranzaqcias
-    }
+        public List<Polisi> Polisebi;
+        public string PaketisNomeri { get; set; }
 
-    public class GaformdaKontrakti : Movlena
-    {
-        public Polisi GaformebuliPoli { get; set; }
-    }
-
-    public class GauqmdaPolisi : Movlena
-    {
-        public Polisi GauqmebuiliPolisi { get; set; }
     }
 
     public class Polisi
     {
-        public string Mzgveveli { get; set; }
-        public string Nomeri { get; set; }
+        public string MzgveveliKompania { get; set; }
+        public string PolisiNomeri { get; set; }
     }
 
-    public class Paketi
+    public enum ChabardasStatusi
     {
-        public JgufisKodi Damajgufebeli { get; set; }
-        public string PaketisNomeri { get; set; }
-        public List<string> MzgveveliKompaniebi { get; set; }
-        public List<Polisi> Polisebi { get; set; }
-        //        public Decimal MamentGamosartmeviTanxa { get; set; }
-        public DateTime PaketisTarigi { get; set; }
-        public DateTime CarmatebuliVizitisTarigi { get; set; }
-        public Paketi()
-        {
-            PaketisNomeri = "P1";
-            Damajgufebeli = new JgufisKodi() { Damajgufebeli = "j1" };
-            MzgveveliKompaniebi = new List<string>() { "AGG", "ICG" };
-            Polisebi = new List<Polisi>(){
-                               new Polisi(){ Nomeri = "1"},
-                               new Polisi(){ Nomeri = "2"},
-                               new Polisi(){ Nomeri = "3"}
-                           };
-            //MamentGamosartmeviTanxa = -1;
-            PaketisTarigi = new DateTime(2011, 09, 10);
-            CarmatebuliVizitisTarigi = PaketisTarigi.AddDays(5);
-        }
+        PaketiMovidaGanmeorebit,
+        GaixsnaAxaliTranzaqcia,
+        GauqmdaTranzaqcia,
+        GanaxldaTranzaqciisMonacemebi
+    }
+
+    public class GaformdaKontrakti : Movlena
+    {
+        public string PolisiNomeri { get; set; }
+    }
+
+    public class GauqmdaPolisi : Movlena
+    {
     }
 
     public class JgufisKodi

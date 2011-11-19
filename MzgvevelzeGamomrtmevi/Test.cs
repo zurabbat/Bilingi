@@ -13,22 +13,22 @@ namespace MzgvevelzeGamomrtmevi
         [Test]
         public void SacdeliDictionary()
         {
-            Koordinatori zura;
-            zura = Dackeba();
-            var movlenebi = new List<Movlena>()
-                                {
-                                    new Chabarda()
-                                        {
-                                            ChabarebuliPaketi = new Paketi(),
-                                            MigebisTarigi = DateTime.Now,
-                                            SheasrulesStatusi = MzgvevelzeGamomrtmevi.ChabardasStatusi.PaketiMovidaMovidaGanmeorebit
-                                        }
-                                    ,
-                                    new GaformdaKontrakti()
-                                    ,
-                                    new GauqmdaPolisi()
-                                };
-            zura.Sacdeli(movlenebi);
+            //Koordinatori zura;
+            //zura = Dackeba();
+            //var movlenebi = new List<Movlena>()
+            //                    {
+            //                        new Chabarda()
+            //                            {
+            //                                ChabarebuliPaketi = new Paketi(),
+            //                                MigebisTarigi = DateTime.Now,
+            //                                SheasrulesStatusi = MzgvevelzeGamomrtmevi.ChabardasStatusi.PaketiMovidaMovidaGanmeorebit
+            //                            }
+            //                        ,
+            //                        new GaformdaKontrakti()
+            //                        ,
+            //                        new GauqmdaPolisi()
+            //                    };
+            //zura.Sacdeli(movlenebi);
         }
 
         [Test]
@@ -71,6 +71,21 @@ namespace MzgvevelzeGamomrtmevi
             Console.WriteLine(l1.Contains("k"));
         }
 
+
+        [Test]
+        public void StringebisListEqual()
+        {
+            var l1 = new List<string>() { "a", "b", "c", "d", "f" };
+            var l2 = new List<string>() { "a", "f", "c", "d"};
+            l1.Sort();
+            l2.Sort();
+            
+            foreach (var item in l2)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(l1.SequenceEqual(l2));
+        }
 
         public Koordinatori Dackeba()
         {

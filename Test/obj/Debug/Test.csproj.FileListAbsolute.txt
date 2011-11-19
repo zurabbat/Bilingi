@@ -1,0 +1,7 @@
+C:\Projects\Bilingi\Test\bin\Debug\Test.dll
+C:\Projects\Bilingi\Test\bin\Debug\Test.pdb
+C:\Projects\Bilingi\Test\bin\Debug\nunit.framework.dll
+C:\Projects\Bilingi\Test\bin\Debug\nunit.framework.xml
+C:\Projects\Bilingi\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Bilingi\Test\obj\Debug\Test.dll
+C:\Projects\Bilingi\Test\obj\Debug\Test.pdb

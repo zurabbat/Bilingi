@@ -1,44 +1,44 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:packages.config" caret="0" fromTop="0" />
       <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:FasiTarigitBase.cs" caret="862" fromTop="7" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="3159" fromTop="30" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="2539" fromTop="23" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="1410" fromTop="18" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="595" fromTop="14" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="160" fromTop="8" />
+      <File id="93B94B12-0448-440D-BBF1-5CE4A8D78866/f:Class1.cs" caret="0" fromTop="0" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="2734" fromTop="25" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="6097" fromTop="18" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="7132" fromTop="5" />
     </RecentFiles>
     <RecentEdits>
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="2798" fromTop="26" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="3611" fromTop="35" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="1011" fromTop="4" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="1274" fromTop="10" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="3029" fromTop="18" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="5406" fromTop="27" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="5619" fromTop="35" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="836" fromTop="18" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="1059" fromTop="18" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="26" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="2128" fromTop="18" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="2604" fromTop="28" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="13" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="1567" fromTop="12" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="1951" fromTop="17" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="21" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="473" fromTop="15" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="3494" fromTop="21" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="2496" fromTop="35" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="2484" fromTop="25" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="22" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="15" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="10" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="1410" fromTop="18" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="11" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="15" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2104" fromTop="13" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="3470" fromTop="35" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="673" fromTop="12" />
-      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:PaketisShemfasebeli.cs" caret="2086" fromTop="23" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="4090" fromTop="15" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="6511" fromTop="30" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="6446" fromTop="24" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="6566" fromTop="24" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="2208" fromTop="25" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="267" fromTop="8" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="6952" fromTop="13" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="2649" fromTop="18" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="2531" fromTop="18" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="2451" fromTop="16" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="178" fromTop="8" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="582" fromTop="17" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="6293" fromTop="14" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="2010" fromTop="27" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="8779" fromTop="19" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="9774" fromTop="35" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="2959" fromTop="33" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Test.cs" caret="2734" fromTop="25" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="4806" fromTop="14" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="5406" fromTop="28" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="4452" fromTop="8" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="5101" fromTop="20" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="6229" fromTop="29" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="5779" fromTop="24" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="8587" fromTop="26" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="7372" fromTop="23" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="7541" fromTop="22" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="8548" fromTop="31" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/d:Models/f:TranzaqciebisSacavi.cs" caret="6136" fromTop="35" />
+      <File id="60961BFE-6B6D-4CF8-91CF-96BAC0088C26/f:Koordinatori.cs" caret="8314" fromTop="33" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -68,31 +68,31 @@
       <Item value="value" priority="31" />
       <Item value="DateTime`0" priority="512" />
       <Item value="abstract" priority="31" />
-      <Item value="public" priority="1750" />
-      <Item value="Decimal`0" priority="319" />
-      <Item value="string" priority="538" />
-      <Item value="List" priority="621" />
-      <Item value="var" priority="1279" />
-      <Item value="new" priority="2440" />
-      <Item value="Movlena`0" priority="2097" />
-      <Item value="foreach" priority="186" />
-      <Item value="movlena" priority="1999" />
+      <Item value="public" priority="1846" />
+      <Item value="Decimal`0" priority="350" />
+      <Item value="string" priority="885" />
+      <Item value="List" priority="714" />
+      <Item value="var" priority="2111" />
+      <Item value="new" priority="3218" />
+      <Item value="Movlena`0" priority="2126" />
+      <Item value="foreach" priority="474" />
+      <Item value="movlena" priority="3179" />
       <Item value="typeof" priority="411" />
-      <Item value="if" priority="446" />
+      <Item value="if" priority="638" />
       <Item value="is" priority="95" />
       <Item value="Chabarda`0" priority="1401" />
       <Item value="GaformdaKontrakti`0" priority="192" />
-      <Item value="GauqmdaPolisi`0" priority="224" />
+      <Item value="GauqmdaPolisi`0" priority="255" />
       <Item value="Dictionary" priority="62" />
       <Item value="Type`0" priority="221" />
       <Item value="Object`0" priority="30" />
-      <Item value="Koordinatori`0" priority="159" />
+      <Item value="Koordinatori`0" priority="191" />
       <Item value="movlenebisCnobari" priority="31" />
       <Item value="Dictionary&lt;Type,IShemsrulebeli&gt;" priority="28" />
       <Item value="object" priority="283" />
       <Item value="IShemsrulebeli" priority="878" />
-      <Item value="Test" priority="159" />
-      <Item value="void" priority="223" />
+      <Item value="Test" priority="223" />
+      <Item value="void" priority="255" />
       <Item value="Koordinatori" priority="87" />
       <Item value="List&lt;Movlena&gt;" priority="57" />
       <Item value="Chabarda" priority="144" />
@@ -105,18 +105,18 @@
       <Item value="sh" priority="127" />
       <Item value="ChabardaPaketisShemsrulebeli`0" priority="224" />
       <Item value="ChabardaPaketisShemsrulebeli" priority="53" />
-      <Item value="Console`0" priority="287" />
+      <Item value="Console`0" priority="383" />
       <Item value="Keys" priority="58" />
       <Item value="readonly" priority="58" />
       <Item value="_movlenebisCnobari1" priority="31" />
       <Item value="type" priority="159" />
       <Item value="foo" priority="191" />
-      <Item value="return" priority="478" />
+      <Item value="return" priority="958" />
       <Item value="Foos" priority="31" />
       <Item value="MzgvevelzeGamomrtmevi" priority="31" />
       <Item value="Void`0" priority="31" />
       <Item value="Delegate`0" priority="31" />
-      <Item value="x" priority="863" />
+      <Item value="x" priority="1853" />
       <Item value="foos" priority="63" />
       <Item value="Tuple`0" priority="26" />
       <Item value="out" priority="63" />
@@ -124,23 +124,23 @@
       <Item value="GaformdaKontraktisShemsrulebeli" priority="70" />
       <Item value="GaformdaKontrakti" priority="28" />
       <Item value="where" priority="95" />
-      <Item value="for" priority="63" />
+      <Item value="for" priority="95" />
       <Item value="GauqmdaPolisiShemsrulebeli" priority="53" />
       <Item value="GauqmdaPolisi" priority="28" />
       <Item value="Paketi`0" priority="251" />
       <Item value="decimal" priority="214" />
       <Item value="MamentGamosartmeviTanxa" priority="91" />
-      <Item value="Guid`0" priority="160" />
-      <Item value="PaketisNomeri" priority="141" />
+      <Item value="Guid`0" priority="226" />
+      <Item value="PaketisNomeri" priority="195" />
       <Item value="PaketisTarigi" priority="86" />
       <Item value="Damajgufebeli" priority="59" />
       <Item value="MzgveveliKompaniebi" priority="59" />
-      <Item value="List&lt;string&gt;" priority="144" />
+      <Item value="List&lt;string&gt;" priority="318" />
       <Item value="JgufisKodi" priority="57" />
       <Item value="Polisebi" priority="54" />
       <Item value="List&lt;Polisi&gt;" priority="57" />
       <Item value="Polisi" priority="115" />
-      <Item value="GetHashCode`0" priority="63" />
+      <Item value="GetHashCode`0" priority="95" />
       <Item value="SetCultureAttribute`0" priority="63" />
       <Item value="CarmatebuliVizitisTarigi" priority="58" />
       <Item value="Paketi" priority="144" />
@@ -157,34 +157,34 @@
       <Item value="daaregistrireShemsrulebebli" priority="31" />
       <Item value="Dackeba`0" priority="31" />
       <Item value="zura" priority="92" />
-      <Item value="Polisi`0" priority="63" />
-      <Item value="null" priority="63" />
+      <Item value="Polisi`0" priority="122" />
+      <Item value="null" priority="127" />
       <Item value="paketebi" priority="31" />
       <Item value="millisecond" priority="31" />
       <Item value="Nomeri" priority="31" />
       <Item value="ppp" priority="31" />
-      <Item value="PaketisShemfasebeli`0" priority="59" />
+      <Item value="PaketisShemfasebeli`0" priority="90" />
       <Item value="IDictionary" priority="31" />
       <Item value="ConcurrentDictionary&lt;DateTime,decimal&gt;" priority="28" />
       <Item value="Preiskuranti" priority="58" />
       <Item value="MoqmediaDan" priority="31" />
       <Item value="chabarebuliPaketi" priority="480" />
-      <Item value="false" priority="31" />
-      <Item value="Tranzaqcia" priority="86" />
+      <Item value="false" priority="63" />
+      <Item value="Tranzaqcia" priority="145" />
       <Item value="StringSplitOptions`0" priority="31" />
       <Item value="DateTimeKind`0" priority="31" />
-      <Item value="enum" priority="63" />
-      <Item value="Statusi" priority="152" />
-      <Item value="TranzaqciisStatusi`0" priority="55" />
-      <Item value="Tranzaqcia`0" priority="376" />
+      <Item value="enum" priority="94" />
+      <Item value="Statusi" priority="180" />
+      <Item value="TranzaqciisStatusi`0" priority="119" />
+      <Item value="Tranzaqcia`0" priority="438" />
       <Item value="TranzaqciisID" priority="31" />
-      <Item value="GiaTranzaqcia" priority="16" />
-      <Item value="from" priority="64" />
-      <Item value="List&lt;Tranzaqcia&gt;" priority="28" />
+      <Item value="GiaTranzaqcia" priority="33" />
+      <Item value="from" priority="96" />
+      <Item value="List&lt;Tranzaqcia&gt;" priority="57" />
       <Item value="Tranzaqcias" priority="32" />
-      <Item value="MomeciTranzaqciebi`0" priority="95" />
+      <Item value="MomeciTranzaqciebi`0" priority="186" />
       <Item value="rezultati" priority="31" />
-      <Item value="TranzaqciebisSacavi" priority="86" />
+      <Item value="TranzaqciebisSacavi" priority="202" />
       <Item value="TranzaqciebisSacavi`0" priority="31" />
       <Item value="GauqmebuliTranzaqcia" priority="33" />
       <Item value="Preiskuranti`0" priority="95" />
@@ -197,13 +197,13 @@
       <Item value="item" priority="63" />
       <Item value="mzgveveli" priority="219" />
       <Item value="resultati" priority="63" />
-      <Item value="y" priority="31" />
+      <Item value="y" priority="191" />
       <Item value="char" priority="31" />
-      <Item value="l1" priority="95" />
+      <Item value="l1" priority="191" />
       <Item value="StringComparer`0" priority="31" />
-      <Item value="VARIABLE" priority="31" />
+      <Item value="VARIABLE" priority="63" />
       <Item value="arsebuliTranzaqcia" priority="223" />
-      <Item value="else" priority="127" />
+      <Item value="else" priority="255" />
       <Item value="axaliMosuliPolisebi" priority="63" />
       <Item value="lNew" priority="63" />
       <Item value="shefaseba" priority="95" />
@@ -217,23 +217,58 @@
       <Item value="TranzaqciisTarigi" priority="27" />
       <Item value="Tanxa" priority="27" />
       <Item value="aa" priority="58" />
-      <Item value="polisi" priority="31" />
-      <Item value="select" priority="31" />
-      <Item value="axaliTranzaqcia" priority="31" />
+      <Item value="polisi" priority="128" />
+      <Item value="select" priority="63" />
+      <Item value="axaliTranzaqcia" priority="63" />
       <Item value="mozebniliTranzaqcia" priority="63" />
       <Item value="axaliSia" priority="31" />
       <Item value="Count`0" priority="26" />
       <Item value="IFormatProvider`0" priority="31" />
       <Item value="paketisPolisebi" priority="63" />
-      <Item value="static" priority="26" />
-      <Item value="tarigi" priority="31" />
+      <Item value="static" priority="58" />
+      <Item value="tarigi" priority="63" />
       <Item value="fasi" priority="63" />
       <Item value="FasiTarigitBase" priority="29" />
       <Item value="FasiTarigit" priority="28" />
       <Item value="tarifi" priority="63" />
       <Item value="Fasi" priority="31" />
-      <Item value="ChabardasStatusi`0" priority="27" />
+      <Item value="ChabardasStatusi`0" priority="118" />
       <Item value="tranzaqciisTarigi" priority="31" />
+      <Item value="InvalidProgramException`0" priority="32" />
+      <Item value="Predicate" priority="32" />
+      <Item value="delegate" priority="32" />
+      <Item value="st" priority="31" />
+      <Item value="l2" priority="31" />
+      <Item value="paketisNomeri" priority="95" />
+      <Item value="shecdoma" priority="63" />
+      <Item value="tranzaqciebi" priority="319" />
+      <Item value="arsebuliTranzaqciebi" priority="63" />
+      <Item value="tranzaqcia" priority="373" />
+      <Item value="XmlWriterTraceListener`0" priority="31" />
+      <Item value="XmlWriterTraceListener" priority="31" />
+      <Item value="TranzaqciisPolisi" priority="171" />
+      <Item value="polisisNomeri" priority="31" />
+      <Item value="Tarigi" priority="60" />
+      <Item value="TranzaqciisPaketi" priority="57" />
+      <Item value="List&lt;TranzaqciisPolisi&gt;" priority="86" />
+      <Item value="PolisisNomeri" priority="134" />
+      <Item value="TranzaqciisPolisi`0" priority="31" />
+      <Item value="TranzaqciisId" priority="31" />
+      <Item value="Paketebi" priority="98" />
+      <Item value="axaliPolisebi" priority="63" />
+      <Item value="variable" priority="31" />
+      <Item value="Action&lt;Polisi&gt;" priority="28" />
+      <Item value="compania" priority="32" />
+      <Item value="IEnumerable" priority="31" />
+      <Item value="aaa" priority="31" />
+      <Item value="sacavi" priority="31" />
+      <Item value="zveliPolisebi" priority="31" />
+      <Item value="axaliPilisebi" priority="31" />
+      <Item value="sia" priority="31" />
+      <Item value="TranzaqciisTipi`0" priority="96" />
+      <Item value="axali" priority="31" />
+      <Item value="SavaraudodGamosartmevi" priority="33" />
+      <Item value="DamtkicdaStatusi`0" priority="58" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
       <Item value="Now" priority="82" />
@@ -244,7 +279,7 @@
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Koordinatori">
       <Item value="Sacdeli`0" priority="80" />
       <Item value="PaketisGirbulebisCalkulatori`0" priority="26" />
-      <Item value="DaaregistrireShemsrulebebli`1" priority="80" />
+      <Item value="DaaregistrireShemsrulebebli`1" priority="107" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
       <Item value="Add`0" priority="188" />
@@ -269,10 +304,12 @@
       <Item value="GetType`0" priority="81" />
       <Item value="ChabarebuliPaketi" priority="295" />
       <Item value="SheasrulesStatusi" priority="26" />
-      <Item value="Tarigi" priority="107" />
+      <Item value="Tarigi" priority="217" />
+      <Item value="PaketisNomeri" priority="26" />
+      <Item value="Paketi" priority="600" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
-      <Item value="WriteLine`0" priority="238" />
+      <Item value="WriteLine`0" priority="319" />
       <Item value="Write`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2+ValueCollection">
@@ -284,22 +321,29 @@
       <Item value="Value" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="FirstOrDefault`1" priority="26" />
+      <Item value="FirstOrDefault`1" priority="53" />
       <Item value="First`1" priority="161" />
       <Item value="Concat`1" priority="26" />
       <Item value="Count" priority="77" />
-      <Item value="Where`1" priority="137" />
-      <Item value="SelectMany`2" priority="53" />
+      <Item value="Where`1" priority="409" />
+      <Item value="SelectMany`2" priority="273" />
       <Item value="Except`1" priority="110" />
       <Item value="Intersect`1" priority="131" />
-      <Item value="Select`2" priority="26" />
+      <Item value="Select`2" priority="268" />
       <Item value="Join`4" priority="26" />
       <Item value="Remove`0" priority="26" />
       <Item value="ToArray`0" priority="22" />
       <Item value="GetType`0" priority="27" />
       <Item value="ToList`1" priority="26" />
       <Item value="Count`1" priority="26" />
-      <Item value="Contains`0" priority="26" />
+      <Item value="Contains`0" priority="108" />
+      <Item value="RemoveAll`0" priority="49" />
+      <Item value="Add`0" priority="192" />
+      <Item value="AddRange`0" priority="22" />
+      <Item value="ForEach`0" priority="81" />
+      <Item value="SequenceEqual`1" priority="53" />
+      <Item value="Equals`0" priority="27" />
+      <Item value="Sort`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Koordinatori+ChabardaPaketisShemsrulebeli">
       <Item value="Sheasrule`0" priority="26" />
@@ -309,6 +353,7 @@
       <Item value="Tarigi" priority="26" />
       <Item value="GaformebuliPolis" priority="27" />
       <Item value="GaformebuliPoli" priority="53" />
+      <Item value="PolisiNomeri" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.ChabardaPaketisShemsrulebeli">
       <Item value="Sheasrule`0" priority="53" />
@@ -316,13 +361,13 @@
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Paketi">
       <Item value="Polisebi" priority="240" />
       <Item value="MamentGamosartmeviTanxa" priority="26" />
-      <Item value="PaketisNomeri" priority="213" />
+      <Item value="PaketisNomeri" priority="240" />
       <Item value="MzgveveliKompaniebi" priority="81" />
       <Item value="PaketisTarigi" priority="26" />
       <Item value="Damajgufebeli" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Guid">
-      <Item value="NewGuid`0" priority="81" />
+      <Item value="NewGuid`0" priority="137" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.DateTime">
       <Item value="AddDays`0" priority="26" />
@@ -343,6 +388,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Polisi">
       <Item value="Nomeri" priority="134" />
+      <Item value="PolisiNomeri" priority="404" />
+      <Item value="MzgveveliKompania" priority="49" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="IsNullOrWhiteSpace`0" priority="54" />
@@ -355,27 +402,31 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="Aggregate`1" priority="26" />
-      <Item value="Where`1" priority="108" />
+      <Item value="Where`1" priority="135" />
       <Item value="SelectMany`2" priority="26" />
       <Item value="Any`1" priority="26" />
       <Item value="FirstOrDefault`1" priority="53" />
       <Item value="SingleOrDefault`1" priority="26" />
       <Item value="OrderBy`2" priority="54" />
       <Item value="OrderByDescending`2" priority="26" />
-      <Item value="ToList`1" priority="107" />
-      <Item value="Count`1" priority="107" />
+      <Item value="ToList`1" priority="316" />
+      <Item value="Count`1" priority="188" />
+      <Item value="Select`2" priority="53" />
+      <Item value="Distinct`1" priority="26" />
+      <Item value="Contains`1" priority="80" />
+      <Item value="Except`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MzgvevelzeGamomrtmevi.TranzaqciisStatusi">
       <Item value="GiaTranzaqcia" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MzgvevelzeGamomrtmevi.Models.TranzaqciebisSacavi+TranzaqciisStatusi">
-      <Item value="GiaTranzaqcia" priority="75" />
+      <Item value="GiaTranzaqcia" priority="103" />
       <Item value="DamxuruliTranzaqcia" priority="28" />
       <Item value="GauqmebuliTranzaqcia" priority="50" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Models.TranzaqciebisSacavi+Tranzaqcia">
-      <Item value="PaketisNomeri" priority="103" />
-      <Item value="Statusi" priority="130" />
+      <Item value="PaketisNomeri" priority="126" />
+      <Item value="Statusi" priority="157" />
       <Item value="MzgveveliKompania" priority="53" />
       <Item value="PaketisTarigi" priority="26" />
       <Item value="Polisebi" priority="126" />
@@ -383,11 +434,16 @@
       <Item value="Tanxa" priority="26" />
       <Item value="JgufisKodi" priority="26" />
       <Item value="TranzaqciisID" priority="53" />
+      <Item value="Tarigi" priority="53" />
+      <Item value="Paketi" priority="27" />
+      <Item value="Paketebi" priority="217" />
+      <Item value="Tipi" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Models.TranzaqciebisSacavi">
-      <Item value="MomeciTranzaqciebi`0" priority="26" />
+      <Item value="MomeciTranzaqciebi`0" priority="80" />
       <Item value="MozebneTranzaqcia`0" priority="27" />
       <Item value="MozebneAraGauqmebuliTranzaqcia`0" priority="22" />
+      <Item value="MozebneShecdomitXomArMovidaDamtkicda`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MzgvevelzeGamomrtmevi.Models.TranzaqciebisSacavi">
       <Item value="TranzaqciisStatusi`0" priority="26" />
@@ -412,16 +468,41 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MzgvevelzeGamomrtmevi.ChabardasStatusi">
       <Item value="PaketiMovidaMovidaGanmeorebit" priority="27" />
+      <Item value="PaketiMovidaGanmeorebit" priority="26" />
+      <Item value="GaixsnaAxaliTranzaqcia" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Models.TranzaqciisPaketi">
+      <Item value="PaketisNomeri" priority="27" />
+      <Item value="Polisebi" priority="188" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.ChabardasPaketi">
+      <Item value="Polisebi" priority="403" />
+      <Item value="PaketisNomeri" priority="164" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MzgvevelzeGamomrtmevi.Models.TranzaqciisPolisi">
+      <Item value="PolisisNomeri" priority="188" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Enumerable">
+      <Item value="SelectMany`2" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MzgvevelzeGamomrtmevi.Models.TranzaqciisTipi">
+      <Item value="SavaraudodGamosartmevi" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MzgvevelzeGamomrtmevi.DamtkicdaStatusi">
+      <Item value="DamtkicdaMovidaShecdomit" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <UnitTestSessions>
     <Session>
       <Name>Session #1</Name>
       <Elements>
+        <UnitTestElement Provider="nUnit" Id="Test.Class1" type="NUnitTestFixtureElement" Project="93B94B12-0448-440D-BBF1-5CE4A8D78866" />
         <UnitTestElement Provider="nUnit" Id="MzgvevelzeGamomrtmevi.Test" type="NUnitTestFixtureElement" Project="60961BFE-6B6D-4CF8-91CF-96BAC0088C26" />
         <UnitTestElement Provider="nUnit" Id="MzgvevelzeGamomrtmevi.Test.FasiPreiskurantidan" ParentId="MzgvevelzeGamomrtmevi.Test" type="NUnitTestElement" TypeName="MzgvevelzeGamomrtmevi.Test" MethodName="FasiPreiskurantidan" Project="60961BFE-6B6D-4CF8-91CF-96BAC0088C26" />
+        <UnitTestElement Provider="nUnit" Id="Test.Class1.RemoveStringArray" ParentId="Test.Class1" type="NUnitTestElement" TypeName="Test.Class1" MethodName="RemoveStringArray" Project="93B94B12-0448-440D-BBF1-5CE4A8D78866" />
         <UnitTestElement Provider="nUnit" Id="MzgvevelzeGamomrtmevi.Test.SacdeliDictionary" ParentId="MzgvevelzeGamomrtmevi.Test" type="NUnitTestElement" TypeName="MzgvevelzeGamomrtmevi.Test" MethodName="SacdeliDictionary" Project="60961BFE-6B6D-4CF8-91CF-96BAC0088C26" />
         <UnitTestElement Provider="nUnit" Id="MzgvevelzeGamomrtmevi.Test.StringebisListContains" ParentId="MzgvevelzeGamomrtmevi.Test" type="NUnitTestElement" TypeName="MzgvevelzeGamomrtmevi.Test" MethodName="StringebisListContains" Project="60961BFE-6B6D-4CF8-91CF-96BAC0088C26" />
+        <UnitTestElement Provider="nUnit" Id="MzgvevelzeGamomrtmevi.Test.StringebisListEqual" ParentId="MzgvevelzeGamomrtmevi.Test" type="NUnitTestElement" TypeName="MzgvevelzeGamomrtmevi.Test" MethodName="StringebisListEqual" Project="60961BFE-6B6D-4CF8-91CF-96BAC0088C26" />
         <UnitTestElement Provider="nUnit" Id="MzgvevelzeGamomrtmevi.Test.StringebisShedareba" ParentId="MzgvevelzeGamomrtmevi.Test" type="NUnitTestElement" TypeName="MzgvevelzeGamomrtmevi.Test" MethodName="StringebisShedareba" Project="60961BFE-6B6D-4CF8-91CF-96BAC0088C26" />
       </Elements>
     </Session>
